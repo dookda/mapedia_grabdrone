@@ -1,0 +1,57 @@
+<ion-content>
+  <div class="opci">
+    <ion-item>
+      <ion-label>รายละเอียดของผู้ให้บริการ</ion-label>
+      <ion-button color="danger" slot="end" (click)="closeModal()">
+        <ion-icon name="close-circle"></ion-icon>&nbsp;ปิด
+      </ion-button>
+    </ion-item>
+  </div>
+
+  <ion-list>
+    <ion-item>
+      <ion-label color="primary">
+        <p class="kanit-title">เกี่ยวกับผู้ให้บริการ</p>
+      </ion-label>
+      <img [src]="img" />
+    </ion-item>
+    <ion-item>
+      <ion-label>ชื่อผู้ให้บริาร: {{code}}</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>รหัสผู้ใช้บริการ: {{list}}</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>ข้อมูล: {{lat}}, {{lng}}</ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-label color="primary">
+        <p class="kanit-title">ตารางงาน</p>
+      </ion-label>
+    </ion-card-header>
+    <ion-card-content>
+      <p>dddddddd</p>
+      <p>dddddddd</p>
+      <p>dddddddd</p>
+      <p>dddddddd</p>
+      <p>dddddddd</p>
+      <p>dddddddd</p>
+      <button ion-button icon-start>
+        <ion-icon name="paper-plane"></ion-icon>
+        ส่งความคิดเห็น
+      </button>
+    </ion-card-content>
+  </ion-card>
+
+
+  <div padding>
+    <ion-button color="secondary" (click)="gotoChat()">สอบถาม</ion-button>
+    <ion-button color="success" (click)="gotoOrder()">จองคิว</ion-button>
+
+  </div>
+
+
+</ion-content>

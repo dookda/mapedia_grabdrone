@@ -1,0 +1,7 @@
+{
+  "name": "grab_drone",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,55 @@
+<ion-content>
+  <div class="opci">
+    <ion-item>
+      <ion-label>จองคิว</ion-label>
+      <ion-button color="danger" slot="end" (click)="closeModal()">
+        <ion-icon name="close-circle"></ion-icon>
+        &nbsp;ปิด
+      </ion-button>
+    </ion-item>
+  </div>
+
+  <div>
+    <form #form="ngForm">
+
+      <ion-grid>
+        <ion-list>
+          <ion-list-header>Interface Options</ion-list-header>
+
+          <ion-item>
+            <ion-label>ประเภทของพืช</ion-label>
+            <ion-select [interfaceOptions]="customActionSheetOptions" interface="action-sheet" placeholder="Select One"
+              ngModel required>
+              <ion-select-option value="red">Red</ion-select-option>
+              <ion-select-option value="purple">Purple</ion-select-option>
+              <ion-select-option value="yellow">Yellow</ion-select-option>
+              <ion-select-option value="orange">Orange</ion-select-option>
+              <ion-select-option value="green">Green</ion-select-option>
+            </ion-select>
+          </ion-item>
+
+          <ion-item>
+            <ion-label>ประเภทการฉีดพ่น</ion-label>
+            <ion-select [interfaceOptions]="customActionSheetOptions" interface="action-sheet" placeholder="Select One"
+              ngModel required>
+              <ion-select-option value="red">Red</ion-select-option>
+              <ion-select-option value="purple">Purple</ion-select-option>
+              <ion-select-option value="yellow">Yellow</ion-select-option>
+              <ion-select-option value="orange">Orange</ion-select-option>
+              <ion-select-option value="green">Green</ion-select-option>
+            </ion-select>
+          </ion-item>
+
+          <ion-item>
+            <ion-input name="password" type="text" placeholder="จำนวนเนื้อที่" ngModel required></ion-input>
+          </ion-item>
+
+        </ion-list>
+        <div>
+          <ion-button type="submit" [disabled]="form.invalid" expand="block">จองคิว</ion-button>
+        </div>
+      </ion-grid>
+
+    </form>
+  </div>
+</ion-content>
