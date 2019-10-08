@@ -17,7 +17,8 @@ const routes: Routes = [
   },
   { path: 'detail', loadChildren: './detail/detail.module#DetailPageModule' },
   { path: 'order', loadChildren: './order/order.module#OrderPageModule' },
-  { path: 'chat', loadChildren: './chat/chat.module#ChatPageModule' }
+  { path: 'chat', loadChildren: './chat/chat.module#ChatPageModule' },
+  { path: 'wellcome', loadChildren: './wellcome/wellcome.module#WellcomePageModule' }
 ];
 
 @NgModule({
@@ -26,4 +27,4 @@ const routes: Routes = [
   ],
   exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }

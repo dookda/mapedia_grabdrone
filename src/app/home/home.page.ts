@@ -104,8 +104,8 @@ export class HomePage {
 
     L.control.layers({
       // "Google Map": googlemap.addTo(this.map),
-      "OSM": osm.addTo(this.map),
-      "Thaichote": theosWmts,
+      'OSM': osm.addTo(this.map),
+      'Thaichote': theosWmts,
       // "Google Hybrid": satellite
     }, {
         // 'หมู่บ้านที่เกิดไข้เลือดออก': dengue.addTo(this.map),

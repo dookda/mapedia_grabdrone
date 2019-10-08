@@ -7,6 +7,12 @@
       </ion-button>
     </ion-item>
   </div>
+  <div padding>
+    <div class="calendar_header">
+      <h1 class="header_title">{{code}}</h1>
+      <p class="header_copy"> บริการฉีดพ่นปุ๋ย สารเคมี</p>
+    </div>
+  </div>
 
   <ion-list>
     <ion-item>
@@ -16,35 +22,46 @@
       <img [src]="img" />
     </ion-item>
     <ion-item>
-      <ion-label>ชื่อผู้ให้บริาร: {{code}}</ion-label>
+      <ion-label>ชื่อผู้ให้บริาร: </ion-label>
     </ion-item>
     <ion-item>
       <ion-label>รหัสผู้ใช้บริการ: {{list}}</ion-label>
     </ion-item>
     <ion-item>
-      <ion-label>ข้อมูล: {{lat}}, {{lng}}</ion-label>
+      <ion-label>รายละเอียด:<br> ให้บริการฉีดพ่นปุ๋ย สารเคมี <br> สำหรับพืชผลทางการเกษตรทุกชนิด</ion-label>
     </ion-item>
   </ion-list>
 
-  <ion-card>
-    <ion-card-header>
-      <ion-label color="primary">
-        <p class="kanit-title">ตารางงาน</p>
-      </ion-label>
-    </ion-card-header>
-    <ion-card-content>
-      <p>dddddddd</p>
-      <p>dddddddd</p>
-      <p>dddddddd</p>
-      <p>dddddddd</p>
-      <p>dddddddd</p>
-      <p>dddddddd</p>
-      <button ion-button icon-start>
-        <ion-icon name="paper-plane"></ion-icon>
-        ส่งความคิดเห็น
-      </button>
-    </ion-card-content>
-  </ion-card>
+  <!-- <div padding>
+    <div class="calendar_events">
+      <p class="ce_title">อุปกรณ์ที่ใช้</p>
+      <div class="event_item">
+        <div class="ei_Dot dot_active"></div>
+        <div class="ei_Title">ชื่อผู้ให้บริาร: {{code}}</div>
+        <div class="ei_Copy">รหัสผู้ใช้บริการ: {{list}}</div>
+      </div>
+      <div class="event_item">
+        <div class="ei_Dot"></div>
+        <div class="ei_Title">12:00 pm</div>
+        <div class="ei_Copy">Lunch for with the besties</div>
+      </div>
+      <div class="event_item">
+        <div class="ei_Dot"></div>
+        <div class="ei_Title">13:00 pm</div>
+        <div class="ei_Copy">Meet with the client for final design <br> @foofinder</div>
+      </div>
+      <div class="event_item">
+        <div class="ei_Dot"></div>
+        <div class="ei_Title">14:30 am</div>
+        <div class="ei_Copy">Plan event night to inspire students</div>
+      </div>
+      <div class="event_item">
+        <div class="ei_Dot"></div>
+        <div class="ei_Title">15:30 am</div>
+        <div class="ei_Copy">Add some more events to the calendar</div>
+      </div>
+    </div>
+  </div> -->
 
 
   <div padding>

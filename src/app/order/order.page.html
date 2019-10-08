@@ -14,37 +14,47 @@
 
       <ion-grid>
         <ion-list>
-          <ion-list-header>Interface Options</ion-list-header>
+          <ion-list-header>รายละเอียดแปลงที่ต้องการฉีดพ่น</ion-list-header>
 
           <ion-item>
             <ion-label>ประเภทของพืช</ion-label>
-            <ion-select [interfaceOptions]="customActionSheetOptions" interface="action-sheet" placeholder="Select One"
-              ngModel required>
-              <ion-select-option value="red">Red</ion-select-option>
-              <ion-select-option value="purple">Purple</ion-select-option>
-              <ion-select-option value="yellow">Yellow</ion-select-option>
-              <ion-select-option value="orange">Orange</ion-select-option>
-              <ion-select-option value="green">Green</ion-select-option>
+            <ion-select placeholder="Select One" cancelText="ยกเลิก" interface="action-sheet">
+              <ion-select-option value="rice">นาข้าว</ion-select-option>
+              <ion-select-option value="sugar">อ้อย</ion-select-option>
+              <ion-select-option value="corn">ข้าวโพด</ion-select-option>
+              <ion-select-option value="casava">มันสำปะหลัง</ion-select-option>
+              <ion-select-option value="fruit">ไม้ผล</ion-select-option>
+              <ion-select-option value="other">อื่นๆ</ion-select-option>
             </ion-select>
           </ion-item>
 
           <ion-item>
             <ion-label>ประเภทการฉีดพ่น</ion-label>
-            <ion-select [interfaceOptions]="customActionSheetOptions" interface="action-sheet" placeholder="Select One"
-              ngModel required>
-              <ion-select-option value="red">Red</ion-select-option>
-              <ion-select-option value="purple">Purple</ion-select-option>
-              <ion-select-option value="yellow">Yellow</ion-select-option>
-              <ion-select-option value="orange">Orange</ion-select-option>
-              <ion-select-option value="green">Green</ion-select-option>
+            <ion-select placeholder="Select One" cancelText="ยกเลิก" interface="action-sheet">
+              <ion-select-option value="fertilize">ปุ๋ย</ion-select-option>
+              <ion-select-option value="insecticide">สารกำจัดสรัตรูพืช</ion-select-option>
             </ion-select>
           </ion-item>
 
           <ion-item>
-            <ion-input name="password" type="text" placeholder="จำนวนเนื้อที่" ngModel required></ion-input>
+            <ion-label>เนื้อที่ต้องการฉีดพ่น</ion-label>
+            <ion-input name="area" type="number" placeholder="หน่วย: ไร่" ngModel required></ion-input>
           </ion-item>
 
+
+          <ion-item>
+            <ion-label>ตำแหน่งแปลง</ion-label>
+          </ion-item>
+
+
+          <div id="map-order" style="height:300px; width: 100%;"></div>
+
+
         </ion-list>
+
+
+
+
         <div>
           <ion-button type="submit" [disabled]="form.invalid" expand="block">จองคิว</ion-button>
         </div>
